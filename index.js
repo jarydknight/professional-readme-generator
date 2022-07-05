@@ -2,13 +2,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { rejects } = require("assert");
+const generateMarkdown  = require("./utils/generateMarkdown")
 
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
-        name: "project-title",
+        name: "projectTitle",
         message: "Enter your project title (Required)",
         validate: titleInput => {
             if (titleInput) {
@@ -22,9 +23,14 @@ const questions = [
     },
     {
         type: "confirm",
-        name: "table-of-contents",
+        name: "tableOfContents",
         message: "Does your README require a table of contents",
         default: true
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Enter a description for the project"
     },
     {
         type: "input",
@@ -56,8 +62,8 @@ const questions = [
     },
     {
         type: "input",
-        name: "features",
-        message: "Enter features information"
+        name: "questions",
+        message: "Enter questions information"
     },
     {
         type: "input",
@@ -89,7 +95,8 @@ const writeToFile = (data) => {
 
 // TODO: Create a function to initialize app
 const init = () => {
-    inquirer.prompt(questions).then(data => JSON.stringify(data))
+    inquirer.prompt(questions)
+    .then(generateMarkdown)
     .then(writeToFile);
 }
 

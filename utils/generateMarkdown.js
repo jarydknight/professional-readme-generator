@@ -10,11 +10,74 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateMarkdown = data => {
+  return `
+  # ${data.projectTitle}
 
-`;
-}
+  ## Table of Contents
+
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+
+  ---
+
+  ## Description
+
+  ${data.description}
+
+  ---
+
+  ## Installation
+
+  ${data.installation}
+
+  ---
+
+  ## Usage
+
+  ${data.usage}
+
+  ---
+
+  ## License
+
+  ${data.license}
+
+  ---
+
+  ## Contributing
+
+  ${data.contribute}
+
+  ---
+
+  ## Tests
+
+  ${data.tests}
+
+  ---
+
+  ## Questions
+
+  ${data.questions}
+
+  ---
+
+  ## Webpage Demo
+
+  Link to webpage: [**Weather Dashboard**](https://jarydknight.github.io/weather-dashboard/)
+
+  ### Desktop:
+  ![screenshot of webpage](./assets/images/screenshot_1.png) 
+
+  ### Mobile:
+  ![screenshot of webpage](./assets/images/screenshot_2.png)
+  `;
+};
 
 module.exports = generateMarkdown;
