@@ -22,10 +22,14 @@ const questions = [
         }
     },
     {
-        type: "confirm",
-        name: "tableOfContents",
-        message: "Does your README require a table of contents",
-        default: true
+        type: "input",
+        name: "github",
+        message: "Enter your Github username"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email address"
     },
     {
         type: "input",
@@ -52,18 +56,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a license for your project",
-        choices: ["Unlicense", "MIT", "GPLv2", "Apache", "GPLv3", "BSD 3-clause"]
-    },
-    {
-        type: "list",
-        name: "badges",
-        message: "Select badges for project",
-        choices: ["badge 1", "badge 2"]
-    },
-    {
-        type: "input",
-        name: "questions",
-        message: "Enter questions information"
+        choices: ["Unlicense", "MIT", "GPLv2", "Apache 2.0", "GPLv3", "BSD 3-clause"]
     },
     {
         type: "input",
