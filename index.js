@@ -5,7 +5,7 @@ const { rejects } = require("assert");
 const generateMarkdown  = require("./utils/generateMarkdown")
 
 
-// TODO: Create an array of questions for user input
+// Questions array used to get input from user
 const questions = [
     {
         type: "input",
@@ -70,7 +70,7 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Function to write mardkwon content to README.md file created in /dist folder
 const writeToFile = (data) => {
     return new Promise((resolve, reject) => {
         fs.writeFile("./dist/README.md", data, err => {
@@ -86,7 +86,7 @@ const writeToFile = (data) => {
     });
 };
 
-// TODO: Create a function to initialize app
+// Function to initialize the app
 const init = () => {
     inquirer.prompt(questions)
     .then(generateMarkdown)
