@@ -1,5 +1,5 @@
 // Current year used in license text
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 // Function to generate markdown
 const generateMarkdown = data => {
