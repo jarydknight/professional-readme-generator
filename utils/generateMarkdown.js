@@ -162,6 +162,8 @@ const generateMarkdown = data => {
 
   ## Questions
 
+  If you have any questions please check out my Github page and/ or send me an email.
+
   Github: [${data.github}](https://github.com/${data.github})
   
   Email: ${data.email}

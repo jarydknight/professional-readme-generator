@@ -4,8 +4,7 @@ const fs = require("fs");
 const { rejects } = require("assert");
 const generateMarkdown  = require("./utils/generateMarkdown")
 
-
-// Questions array used to get input from user
+// Questions array used to hold question objects to be provided to inquirer
 const questions = [
     {
         type: "input",
@@ -86,7 +85,7 @@ const writeToFile = (data) => {
     });
 };
 
-// Function to initialize the app
+// Function to initialize the app. Use inquirer to prompt user, then generate markdown then write markdown to the file
 const init = () => {
     inquirer.prompt(questions)
     .then(generateMarkdown)
