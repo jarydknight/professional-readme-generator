@@ -160,6 +160,12 @@ const generateMarkdown = data => {
 
   ---
 
+  ## Credits
+
+  ${data.credits} :heart_on_fire:
+
+  ---
+
   ## Questions
 
   If you have any questions please check out my Github page and/ or send me an email.

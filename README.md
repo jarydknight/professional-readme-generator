@@ -29,7 +29,7 @@
 
   ## Usage
 
-  To use this project navigate to the root directory in the terminal and run ```node index.js``` . Once all of the questions have been answered the README.md file will be generated in the \dist folder.
+  To use this project navigate to the root directory in the terminal and run node index.js . Once all of the questions have been answered the README.md file will be generated in the \dist folder.
 
   ---
 
@@ -53,7 +53,13 @@
 
   ## Tests
 
-  There are no automated tests for this project at the moment. Testing can be done manually by running ```node index.js``` in the root directory in the terminal and answering the questions.
+  There are no automated tests for this project at the moment. Testing can be done manually by running node index.js in the root directory in the terminal and answering the questions.
+
+  ---
+
+  ## Credits
+
+  Jaryd Knight :heart_on_fire:
 
   ---
 
