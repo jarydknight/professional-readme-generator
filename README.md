@@ -57,6 +57,14 @@
 
   ---
 
+  ## Demo
+
+  [Demo](https://drive.google.com/file/d/1_p54Bx-0S8ZE5OsYOdY4driJxBBhIRuu/view)
+
+  ![screen record of application in use]("./assets/videos/Untitled_ Jul 6, 2022 10_58 PM.mp4")
+
+  ---
+
   ## Credits
 
   Jaryd Knight :heart_on_fire:
