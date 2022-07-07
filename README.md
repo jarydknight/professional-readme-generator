@@ -61,7 +61,7 @@
 
   [Demo](https://drive.google.com/file/d/1_p54Bx-0S8ZE5OsYOdY4driJxBBhIRuu/view)
 
-  ![screen record of application in use]("./assets/videos/Untitled_ Jul 6, 2022 10_58 PM.mp4")
+  https://user-images.githubusercontent.com/60020507/177683326-045f790d-d2db-44f6-a6ac-06466d63071d.mp4
 
   ---
 
