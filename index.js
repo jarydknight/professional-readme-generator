@@ -37,6 +37,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "technologies",
+        message: "Enter the technologies used for this project (separate multiple technologies by ',')"
+    },
+    {
+        type: "input",
         name: "installation",
         message: "Enter installation information"
 

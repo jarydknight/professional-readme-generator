@@ -9,7 +9,7 @@ const generateMarkdown = data => {
     Unlicense: {
       badge: "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
   
-      licenseText: `This is free and unencumbered software released into the public domain.
+      licenseText: `  This is free and unencumbered software released into the public domain.
   
       Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
       
@@ -106,6 +106,25 @@ const generateMarkdown = data => {
     }
   };
 
+  const renderTechnologies = (data) => {
+    const parsedData = data.split(",");
+    let str = ``;
+    let firstIt = true;
+
+    parsedData.forEach(element => {
+      if (firstIt) {
+        str += `* ${element}\n`;
+        firstIt = false;
+      }
+      else {
+        str += `  * ${element}\n`;
+      }
+      
+    });
+
+    return str;
+  } 
+
   // Return markdown content from function
   return `
   # ${data.projectTitle}
@@ -115,11 +134,14 @@ const generateMarkdown = data => {
   ## Table of Contents
 
   * [Description](#description)
+  * [Technologies](#technologies)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
+  * [Demo](#demo)
   * [Tests](#tests)
+  * [Credits](#credits)
   * [Questions](#questions)
 
   ---
@@ -127,6 +149,12 @@ const generateMarkdown = data => {
   ## Description
 
   ${data.description}
+
+  ---
+
+  ## Technologies
+
+  ${renderTechnologies(data.technologies)}
 
   ---
 
@@ -151,6 +179,10 @@ const generateMarkdown = data => {
   ## Contributing
 
   ${data.contribute}
+
+  ---
+
+  ## Demo
 
   ---
 
